@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "sass": "^1.49.8"
+  },
+  "name": "shouldyoudoitex",
+  "version": "1.0.0",
+  "main": "script.js",
+  "devDependencies": {},
+  "scripts": {
+    "compile:css": "sass --watch input.scss output.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
