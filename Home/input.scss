@@ -124,6 +124,7 @@ main {
 
     #body-title {
       color: $wordLighterColor;
+      margin-bottom: 15px;
       font-size: 30px;
     }
 
@@ -163,10 +164,16 @@ button {
   font-size: 15px;
   margin-bottom: 15px;
   outline: none;
-}
+  cursor: pointer;
 
-button:hover {
-  background-color: $wordColor;
+  &:hover {
+    background-color: $wordColor;
+  }
+
+  &:active {
+    transition: transform 0.2s ease-in-out;
+    transform: scale(0.9);
+  }
 }
 
 footer {
@@ -200,13 +207,78 @@ footer {
     padding: 5px;
     margin-top: 0px;
     color: $wordColor;
-    border-left: 3px  solid $wordColor; 
-    border-right: 3px  solid $wordColor;
+    border-left: 3px solid $wordColor;
+    border-right: 3px solid $wordColor;
   }
 
   img {
     width: 500px;
     height: 400px;
     border: 50%;
+    border-radius: 4px;
   }
+}
+
+.modal-container {
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 40%;
+  height: 25%;
+
+  .modal {
+    background-color: $inputColor;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px 50px;
+    width: 600px;
+    max-width: 100%;
+    text-align: center;
+
+    h1 {
+      color: $wordLighterColor;
+      font-size: 32px;
+      margin: 0px 0px 16px;
+    }
+
+    p {
+      color: $wordLighterColor;
+      font-size: 16px;
+      font-weight: 300;
+      margin: 0px 0px 30px;
+
+    }
+
+    button {
+      background-color: $wordColor;
+      border: medium none;
+      border-radius: 5px;
+      width: 10rem;
+      font-size: 22px;
+      font-weight: 500;
+      padding: 12px;
+      margin: 0px auto;
+      outline: currentColor none medium;
+      cursor: pointer;
+
+      &:hover {
+        filter: brightness(90%);
+      }
+
+      &:active {
+        transition: transform 0.2s ease-in-out;
+        transform: scale(0.9);
+      }
+    }
+  }
+}
+
+.show-modal {
+  pointer-events: auto;
+  opacity: 1;
 }
