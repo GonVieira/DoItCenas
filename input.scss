@@ -46,7 +46,6 @@ header {
 
   a {
     font-size: 22px;
-    display: block;
     padding: 6px 12px;
     text-decoration: none;
     color: $wordColor;
@@ -58,20 +57,37 @@ header {
   }
 
   ul {
-    margin: 0;
+    display: flex;
     padding: 0;
     list-style: none;
     font-size: 15px;
 
     li {
-      display: inline-block;
+      margin-right: 20px;
 
       a {
         color: $wordLighterColor;
         font-size: 15px;
       }
+
+      .home-li {
+        border-bottom: 1px solid $wordLighterColor;
+      }
+
+      .home-a:hover {
+        border-top: 1px solid $wordLighterColor;
+      }
+
+      .gallery-a:hover {
+        border-top: 1px solid $wordLighterColor;
+        border-bottom: 1px solid $wordLighterColor;
+      }
     }
   }
+}
+
+.home-a {
+  border-bottom: 1px solid $wordLighterColor;
 }
 
 .whole-thing-div {
@@ -106,7 +122,7 @@ main {
     flex-direction: column;
     width: 500px;
 
-    h1 {
+    #body-title {
       color: $wordLighterColor;
       font-size: 30px;
     }
@@ -127,19 +143,30 @@ main {
         margin-bottom: 12px;
         outline: none;
       }
-
-      button {
-        height: 45px;
-        background-color: $navBackground;
-        border: none;
-        border-radius: 16px;
-        color: $wordLighterColor;
-        font-size: 15px;
-        margin-bottom: 15px;
-        outline: none;
-      }
     }
   }
+}
+
+#button-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+button {
+  width: 100%;
+  height: 45px;
+  background-color: $navBackground;
+  border: none;
+  border-radius: 16px;
+  color: $wordLighterColor;
+  font-size: 15px;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+button:hover {
+  background-color: $wordColor;
 }
 
 footer {
@@ -158,5 +185,28 @@ footer {
     a {
       color: $wordColor;
     }
+  }
+}
+
+#results {
+  display: flex;
+  justify-content: center;
+
+  h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 26px;
+    width: 100%;
+    padding: 5px;
+    margin-top: 0px;
+    color: $wordColor;
+    border-left: 3px  solid $wordColor; 
+    border-right: 3px  solid $wordColor;
+  }
+
+  img {
+    width: 500px;
+    height: 400px;
+    border: 50%;
   }
 }

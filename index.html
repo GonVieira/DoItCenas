@@ -26,27 +26,36 @@
             </a>
             <ul>
               <li class="home-li">
-                <a href="">HOME</a>
+                <a class="home-a" href="">HOME</a>
               </li>
               <li class="gallery-li">
-                <a href="">GALLERY</a>
+                <a class="gallery-a" href="">GALLERY</a>
               </li>
             </ul>
           </nav>
         </header>
         <main>
           <section class="body-title">
-            <h1>What do you want to do?</h1>
+            <h1 id="body-title">What do you want to do?</h1>
             <form autocomplete="off" class="form-class">
-              <input type="text" />
-              <button type="submit">Decide</button>
+              <input type="text" id="txt-input" />
+              <div id="button-div">
+                <button type="button" id="submit-btn" onclick="getResults()">
+                  Decide
+                </button>
+              </div>
             </form>
+            <section id="results"></section>
           </section>
         </main>
       </div>
       <footer class="footer-class">
-        <p>Made with VSCodium by <a href="">Gon Vieira</a></p>
+        <p>
+          Made with VSCodium by
+          <a href="https://github.com/GonVieira" target="blank">Gon Vieira</a>
+        </p>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
