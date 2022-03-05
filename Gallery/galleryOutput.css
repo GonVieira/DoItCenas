@@ -1,0 +1,283 @@
+@import "node_modules/normalize.css/normalize.css";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
+
+html {
+  line-height: 1;
+}
+
+body {
+  background-color: #171e22;
+  color: #b4b3b3;
+  text-decoration: none;
+  position: relative;
+  min-height: 100%;
+  font-size: 25px;
+  font-size: 25px;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+}
+
+.menu {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #656e6d;
+  align-items: center;
+}
+.menu a {
+  font-size: 22px;
+  padding: 6px 12px;
+  text-decoration: none;
+  color: #b4b3b3;
+}
+.menu a span {
+  font-weight: bolder;
+  color: #ffffff;
+}
+.menu ul {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  font-size: 15px;
+}
+.menu ul li {
+  margin-right: 20px;
+}
+.menu ul li a {
+  color: #ffffff;
+  font-size: 15px;
+}
+.menu ul li .gallery-a {
+  border-bottom: 1px solid #ffffff;
+}
+.menu ul li .home-a:hover {
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+.menu ul li .gallery-a:hover {
+  border-top: 1px solid #ffffff;
+}
+
+.whole-thing-div {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.whole-thing-div div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0px;
+  flex: 1 1 0%;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+main h1 {
+  color: #b4b3b3;
+  font-size: 30px;
+  margin: 10px 0px;
+  padding: 5px;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 30px;
+}
+main #gif-container {
+  display: flex;
+  flex-direction: row;
+}
+main #gif-container div {
+  display: flex;
+}
+main #gif-container div h2 {
+  width: 90%;
+  font-size: 20px;
+  padding-bottom: 15px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0px 20px;
+  border-bottom: 1px solid #b4b3b3;
+}
+main #gif-container div ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  list-style: none;
+  max-width: 100;
+  flex-wrap: wrap;
+}
+main #gif-container div ul li img {
+  padding: 5px;
+  width: 170px;
+  height: 170px;
+  margin: 10px 10px 0px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+footer p {
+  color: #b4b3b3;
+  align-items: center;
+  text-align: center;
+}
+footer p a {
+  color: #b4b3b3;
+}
+
+/*# sourceMappingURL=galleryOutput.css.map */
+
+/* DESKTOP */
+@media only screen and (max-width: 1600px) {
+  main section #body-title {
+    font-size: 28px;
+  }
+
+  .menu a {
+    font-size: 21px;
+  }
+
+  .menu ul li a {
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 15px;
+  }
+
+  main h1 {
+    font-size: 21px;
+  }
+
+  main #gif-container div h2 {
+    width: 89%;
+    font-size: 21px;
+  }
+
+  main #gif-container div ul li img {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+/* LAPTOP */
+@media only screen and (max-width: 1200px) {
+  main section #body-title {
+    font-size: 25px;
+  }
+
+  .menu a {
+    font-size: 18px;
+  }
+
+  .menu ul li a {
+    font-size: 12px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+
+  main h1 {
+    font-size: 20px;
+  }
+
+  main #gif-container div h2 {
+    width: 80%;
+    font-size: 19px;
+  }
+
+  main #gif-container div ul li img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* TABLET */
+@media only screen and (max-width: 768px) {
+  main section #body-title {
+    font-size: 16px;
+  }
+
+  .menu a {
+    font-size: 11px;
+  }
+
+  .menu ul li a {
+    font-size: 11px;
+  }
+
+  footer {
+    font-size: 11px;
+  }
+
+  main h1 {
+    font-size: 19px;
+  }
+
+  main #gif-container div h2 {
+    width: 70%;
+    font-size: 16px;
+  }
+
+  main #gif-container div ul li img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* MOBILE PHONE */
+@media only screen and (max-width: 320px) {
+  main section #body-title {
+    font-size: 16px;
+  }
+
+  .menu a {
+    font-size: 11px;
+  }
+
+  .menu ul li a {
+    font-size: 10px;
+  }
+
+  footer {
+    font-size: 10px;
+  }
+
+  main h1 {
+    font-size: 17px;
+  }
+
+  main #gif-container div h2 {
+    font-size: 12px;
+    width: 65%;
+  }
+
+  main #gif-container div ul li img {
+    width: 100px;
+    height: 100px;
+  }
+}

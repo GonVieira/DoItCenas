@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Should You Do It</title>
+    <link rel="stylesheet" href="galleryOutput.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://fonts.googleapis.com/css?family=Montserrat"
+    />
+  </head>
+  <body onload="getGifs()">
+    <div class="whole-thing-div">
+      <div class="header-body">
+        <header>
+          <nav class="menu">
+            <a class="title" href="/">
+              SHOULD YOU
+              <span class="title-text-end">DO IT</span>
+            </a>
+            <ul>
+              <li class="home-li">
+                <a class="home-a" href="/Home/index.html" target="blank"
+                  >HOME</a
+                >
+              </li>
+              <li class="gallery-li">
+                <a class="gallery-a" href="/Gallery/gallery.html" target="blank"
+                  >GALLERY</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <main>
+          <h1>Gallery</h1>
+          <div id="gif-container">
+            <div id="yes-gif-container">
+              <h2>Do it</h2>
+              <ul id="yes-gif-list"></ul>
+            </div>
+            <div id="no-gif-container">
+                <h2>Don't do it</h2>
+                <ul id="no-gif-list"></ul>
+            </div>
+          </div>
+        </main>
+      </div>
+      <footer class="footer-class">
+        <p>
+          Made with VSCodium by
+          <a href="https://github.com/GonVieira" target="blank">Gon Vieira</a>
+        </p>
+      </footer>
+    </div>
+    <script src="galleryScript.js"></script>
+  </body>
+</html>

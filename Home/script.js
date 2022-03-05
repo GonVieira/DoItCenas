@@ -45,7 +45,9 @@ function getResults() {
         .then((value) => {
           //insert results in HTML
           result.innerHTML = `
-          <h1>${value.msg}</h1>
+          <div id="responseText">
+            <h1>${value.msg}</h1>
+          </div>
           <img src="${value.img}" alt="${value.msg}"> 
         `;
         })
